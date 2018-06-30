@@ -12,7 +12,7 @@ function aesDecrypt(encrypted: string, secretkey: string) {
   export default async (ctx: koa.Context, next: Function) => {
     const path = ctx.url;
     const authorityPaths = ['/api/books', '/business'];
-    console.log('path：', path)
+    return next();
     if (authorityPaths.find(p => path.startsWith(p))) {
         console.log('权限网页')
         const cookieValue = ctx.cookies.get('token');

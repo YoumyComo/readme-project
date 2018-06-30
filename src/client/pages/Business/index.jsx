@@ -11,6 +11,7 @@ import AddBook from '../AddBook';
 import AddChapter from '../AddChapter';
 import AddWord from '../AddWord';
 import WordEditDetail from '../WordEditDetail';
+import WordEditor from '../WordEditor';
 
 
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
@@ -87,8 +88,8 @@ export default class Business extends React.Component {
                                     <Route exact path="/business" component={(props) => { return <BookDisplay {...props} updateBooks={updateBooks}/> }}/>          
                                     <Route exact path="/business/display-chapter/:bookName" component={(props) => <ChapterDisplay {...props} updateBooks={updateBooks}/>}/>
                                     <Route  path="/business/display-word/:bookName/:chapterName" component={(props) => <WordDisplay {...props} updateBooks={updateBooks}/>}/>  
-                                    <Route  path="/business/word-edit-detail/:bookName/:chapterName/:spell" component={WordEditDetail}/> 
-                                    <Route  path="/business/add-word/:bookName/:chapterName" component={WordEditDetail}/>  
+                                    <Route  path="/business/word-edit-detail/:bookName/:chapterName/:spell" component={WordEditor}/> 
+                                    <Route  path="/business/add-word/:bookName/:chapterName" component={(props) => <WordEditor/>}/>  
                                     <Route  path="/business/add-book" component={AddBook}/>  
                                     <Route  path="/business/add-chapter/:bookName" component={AddChapter}/>                                                      
                                 </Layout>
