@@ -1,0 +1,107 @@
+.sentenceSpell {
+    width:100%;
+    padding: 5px 2px;
+    margin-top: 15px;
+}
+
+/* display style */
+.sentenceSpell  .display {
+    border: 2px #d2b35c solid;
+    border-top: 1px #d2b35c solid;
+    border-bottom: 1px #d2b35c solid;
+    border-radius: 5px;
+    padding: 4px 2px;
+    background-color: #f9edb4;
+}
+
+.sentenceSpell  .display  .display-top .player-icon {
+    width: 5px;
+    height: 5px;
+    float: left;
+    margin-right: 2px;
+}
+.sentenceSpell  .display  .display-top .sentence {
+    font-size: 4px;
+}
+.sentenceSpell .display .display-bottom {
+    margin: 5px;
+    text-align: center;
+    line-height: auto;
+}
+.sentenceSpell .display  .display-bottom .spell-item {
+    float: left;
+    margin-right: 4px;
+    font-size: 6px;
+    margin-bottom: 2px;
+}
+.display-bottom .spell-answer{
+    display: block;
+    float: left;
+    color: green;
+    font-size: 4px;
+    margin-right: 0.5em;
+}
+.display-bottom .spell-wrong{
+    display: block;
+    float: left;
+    color: red;
+    font-size: 4px;
+    margin-right: 0.5em;
+}
+/* segmentation style */
+.sentenceSpell .sentence-segmentation {
+    margin: 10px 0;
+}
+.sentenceSpell .sentence-segmentation .segmentation-item {
+    float: left;
+    margin: 2px;
+    padding: 2px;
+    font-size: 8px;
+    border-radius: 1px;
+    box-shadow: 2px;
+    background-color: #e7ac2c;
+}
+
+/* button style */
+.button{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+.button .left, 
+.button .right {
+    display: flex;
+    margin-right: 2px;
+    border: 1px #4286ec solid;
+    border-radius: 2px;
+    padding: 2px;
+    font-size: 6px;
+}
+.button .left {
+    left: 20px;
+}
+.button .right {
+    right: 35%;
+}
+
+/* return style */
+.return {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+}
+.return span{
+    display: flex;
+    font-size: 4px;
+    
+}
+
+/* clear style */
+.button .clear,
+.display-bottom  .clear,
+.sentenceSpell .sentence-segmentation .clear{
+    clear: both;
+}

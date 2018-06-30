@@ -1,0 +1,106 @@
+.detail {
+    background-color: #fff;
+    padding: 2px 5px;
+}
+.detail .image-container{
+   justify-content: center;
+   display: flex;
+}
+.image-container img{
+   display: flex;    
+}
+
+/* example style */
+.detail .example{
+    margin: 4px 0;
+}
+
+.detail .example p{
+    font-size: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #a09d9e;
+}
+ .example .example-detail{
+    width: 100%;
+    margin-top: 2px;
+}
+.example .example-detail .example-left{
+    float: left;
+    width: 80%;
+}
+
+.example .example-detail .example-left .example-sentence{
+   font-size: 4px;
+   color: #000000;
+   margin: 2px 0;
+}
+.example-detail .example-right{
+    float: left;
+    width: 17%;
+    margin-left: 2px;
+    padding-top: 4px;
+    font-size: 4px;
+    justify-content: flex-start;
+
+}
+
+.example-right .player-icon,
+.example-right .write-link {
+   display: block;
+    margin-right: 2%;
+    width: 5px;
+    height: 5px;
+}
+.example-right .player-icon {
+    float:left;
+}
+.example-right .write-link {
+    float:right;
+}
+.write-link .write-icon {
+    width: 5px;
+    height: 5px;
+}
+/* explain style*/
+.detail .explain p{
+    font-size: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #a09d9e;
+}
+.explain .match,
+.explain .help-remeber{
+    margin-top: 2px; 
+}
+.explain .match span,
+.explain .help-remeber span {
+    display: block;
+    margin-right: 2px;
+    float: left;
+    border: solid;
+    border-radius: 1px;
+    font-size: 3px;
+}
+.explain .match .log-match{
+    color: #f123ea;
+}
+.explain .help-remeber .log-help{
+    color: #1eeabd;
+}
+
+.explain .match p,
+.explain .help-remeber p {
+    width: 85%;
+    float: left;
+    font-size: 4px;
+    color: #000000;
+}
+
+/* clear style*/
+.example-detail .clear,
+.explain .match .clear,
+.explain .help-remeber .clear,
+.example-right .clear {
+    clear: both;
+}

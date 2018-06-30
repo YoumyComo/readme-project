@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "commonjs",
+    "removeComments": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "target": "ES6",
+    "alwaysStrict": true,
+    "importHelpers": true,
+    "jsx": "react",
+    "strict": true,
+    "lib": [
+      "dom.iterable",
+      "scripthost",
+      "es2017"
+    ],
+    "typeRoots": [
+      "node_modules/@types/"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "./src/server/thrift/dist",
+    "./src/server/thrift/mocks",
+    "./src/**/*.spec.ts",
+    "./src/**/*.spec.tsx",
+    "./src/client",
+    "node_modules"
+  ]
+}

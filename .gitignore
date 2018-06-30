@@ -1,0 +1,35 @@
+# tsc 编译出来的文件
+src/**/*.js.map
+!src/server/thrift/**/**.js
+
+# 包管理器生成的文件
+node_modules
+package-lock.json
+npm-debug.log
+
+# IDE 的配置文件
+.idea
+.vscode
+
+# 其它
+*.pyc
+*.swk
+*.swl
+*.swn
+*.swm
+*.swo
+*.swp
+*.gem
+.DS_Store
+/config/local*.*
+/config/test*
+_npm-shrinkwrap.json
+_css_deps.js
+_meta.json
+hash.json
+__status.json
+_babelcache.json
+update.tar.gz
+statics/**/*
+buildMeta.json
+coverage/

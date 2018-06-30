@@ -1,0 +1,40 @@
+.word {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #edf1a9;
+    margin-top: -2px;
+    padding: 2px 5px;
+    border-bottom: 2px solid #eff0f3;
+}
+.word span {
+    display: block;
+    margin-top: 2px;
+}
+.word .spell {
+  font-size: 8px;
+  color: #ef5324;
+}
+.word .symbal {
+    font-size: 4px;
+    color: #a09d9e;
+  }
+  .word .translation {
+    font-size: 4px;
+    color: #a09d9e;
+  }
+  .symbal-player .symbal,
+  .symbal-player .eng-player,
+  .symbal-player .ame-player {
+    float:left;
+  }
+  
+  .symbal-player .eng-player,
+  .symbal-player .ame-player{
+    width: 5px;
+    height: 5px;
+    margin-left: 2px;
+  }
+  .symbal-player .clear{
+    clear:both;
+  }

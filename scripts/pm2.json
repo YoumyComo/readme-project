@@ -1,0 +1,23 @@
+{
+  "apps": [
+    {
+      "name": "meituan.sjst.erp.www",
+      "script": "src/server/index.js",
+      "env": {
+        "COMMON_VARIABLE": "true",
+        "NODE_ENV": "production",
+        "BABEL_DISABLE_CACHE": 1
+      },
+      "exec_interpreter": "node",
+      "exec_mode": "cluster_mode",
+      "instances": 0,
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "max_memory_restart": "700M",
+      "merge_logs": true,
+      "error_file": "/var/sankuai/logs/meituan.sjst.erp.www/error.log",
+      "out_file": "/var/sankuai/logs/meituan.sjst.erp.www/out.log",
+      "pid_file": "/var/sankuai/logs/meituan.sjst.erp.www/fe-bdop.pid",
+      "watch": false
+    }
+  ]
+}

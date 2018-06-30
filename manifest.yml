@@ -1,0 +1,37 @@
+version: v1
+build:
+  tools:
+    node: 8.1.2
+    gcc:
+    make:
+    'gcc-c++':
+  run:
+    cmd:
+      - bash bin/pre-deploy
+  deps:
+      - npm-install-g: yarn
+  target:
+    distDir: ./
+    files:
+      - bin
+      - buildMeta.json
+      - config
+      - src
+      - package.json
+      - scripts
+      - node_modules
+cache:
+  dirs:
+    - ./node_modules
+deploy:
+  targetDir: /opt/meituan/apps/meituan.sjst.erp.www
+  run:
+    workDir: /opt/meituan/apps/meituan.sjst.erp.www
+    cmd:
+      - bash bin/post-deploy
+autodeploy:
+  targetDir: /opt/meituan/apps/meituan.sjst.erp.www
+  run: bash ./bin/post-deploy
+  check: ./bin/check
+  checkRetry: 3
+  checkInterval: 30s

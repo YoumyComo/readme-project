@@ -1,0 +1,27 @@
+#!/bin/bash
+
+set -e
+export HOME=/home/sankuai
+NODE_VERSION=7.9.0
+
+command -v node >/dev/null 2>&1 || {
+  cd $HOME
+  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+  source ~/.bashrc
+  nvm install v${NODE_VERSION}
+  nvm alias default v${NODE_VERSION}
+  nvm alias stable v${NODE_VERSION}
+  cd -
+}
+source $HOME/.bashrc
+[ "v${NODE_VERSION}" != `node -v` ] && {
+  cd /home/sankuai
+  nvm install v${NODE_VERSION}
+  nvm alias default v${NODE_VERSION}
+  nvm alias stable v${NODE_VERSION}
+  cd -
+}
+
+[[ ! -d "/var/sankuai/logs/meituan.sjst.erp.buffet" ]] && mkdir -p /var/sankuai/logs/meituan.sjst.erp.buffet
+
+npm run start

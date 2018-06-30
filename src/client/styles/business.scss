@@ -1,0 +1,36 @@
+.business-container {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    display:flex;
+    flex-flow: row;
+  
+    
+}
+/* menu style */
+.header-title {
+    font-size: 24px;
+    line-height: 64px;
+    color: #fff;
+}
+
+.delet-add-buttons button{
+    margin-left: 10px;
+}
+.ant-layout.ant-layout-has-sider {
+    height: 100%;
+}
+.ant-menu-root {
+    overflow: scroll;
+}
+.ant-btn{
+    margin-right: 10px;
+}
+.add-file-wrapper {
+    display: block;
+    color: rgba(0, 0, 0, .65);
+    background-color: #d9d9d9;
+    border-color: #d9d9d9;
+    border-style: dashed;
+    padding: 2px;
+}
