@@ -11,7 +11,7 @@ function aesDecrypt(encrypted, secretkey) {
 exports.default = (ctx, next) => tslib_1.__awaiter(this, void 0, void 0, function* () {
     const path = ctx.url;
     const authorityPaths = ['/api/books', '/business'];
-    console.log('path：', path);
+    return next();
     if (authorityPaths.find(p => path.startsWith(p))) {
         console.log('权限网页');
         const cookieValue = ctx.cookies.get('token');

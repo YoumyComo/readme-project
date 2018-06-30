@@ -9,7 +9,7 @@ class MonitorController {
         };
     }
     somemethod() {
-        return "haha";
+        return 'haha';
     }
 }
 tslib_1.__decorate([

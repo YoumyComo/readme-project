@@ -32,7 +32,11 @@ async function buildServerCode(onCompiled, watch = false) {
 
     child.stdout.on('data', chunk => {
       process.stdout.write(chunk);
-      if (chunk.toString().includes('Compilation complete.')) {
+      const str = chunk.toString();
+      if (
+        str.includes('Compilation complete.') ||
+        str.includes('Watching for file changes')
+      ) {
         onCompiled && onCompiled();
       }
     })

@@ -6,8 +6,6 @@ const Config = require("config");
 const util_1 = require("util");
 const fs = require("fs");
 const Path = require("path");
-const exists = util_1.promisify(fs.exists);
-const readFile = util_1.promisify(fs.readFile);
 const readdir = util_1.promisify(fs.readdir);
 const writeFile = util_1.promisify(fs.writeFile);
 class WordController {

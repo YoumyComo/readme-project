@@ -1,1 +1,22 @@
-{"word":"fuck","imageURL":"/api/images/aa7f3929d869094deaa140f9bfa0c96b.jpg","audioEngURL":"/api/audios/ENG/ee5a47b2e3d1aa0ce74655223e4c96cb.mp3","audioAmeURL":"/api/audios/AME/5ba6083ff21f5a96a478ce3ff83d8a38.mp3","phonetics":"","match":"fuck off vt. 犯错误（离开）；滚蛋","help":"shut the fuck up 闭上鸟嘴；他妈的给我闭嘴","translation":[],"example":[{"audioURL":"/api/audios/Sentence/ee5a47b2e3d1aa0ce74655223e4c96cb.mp3","sentence":"weeer","translation":"tt"},{"sentence":"t","translation":"p","audioURL":"/api/audios/Sentence/5ba6083ff21f5a96a478ce3ff83d8a38.mp3"}]}
+{
+  "word": "fuck",
+  "imageURL": "/api/images/aa7f3929d869094deaa140f9bfa0c96b.jpg",
+  "audioEngURL": "/api/audios/ENG/ee5a47b2e3d1aa0ce74655223e4c96cb.mp3",
+  "audioAmeURL": "/api/audios/AME/5ba6083ff21f5a96a478ce3ff83d8a38.mp3",
+  "phonetics": "",
+  "match": "fuck off vt. 犯错误（离开）；滚蛋",
+  "help": "shut the fuck up 闭上鸟嘴；他妈的给我闭嘴",
+  "translation": ["滚蛋", "干你"],
+  "example": [
+    {
+      "audioURL": "/api/audios/Sentence/ee5a47b2e3d1aa0ce74655223e4c96cb.mp3",
+      "sentence": "weeer",
+      "translation": "tt"
+    },
+    {
+      "sentence": "t",
+      "translation": "p",
+      "audioURL": "/api/audios/Sentence/5ba6083ff21f5a96a478ce3ff83d8a38.mp3"
+    }
+  ]
+}
